@@ -2,6 +2,7 @@
 	<div class="recommend">
 		<scroll class="recommend-content" ref="scroll" :data="discList">
       <div>
+      
         <div v-if="recommends.length" class="slider-wrapper">
           <slider>
             <div v-for="item in recommends">
@@ -11,6 +12,7 @@
             </div>
           </slider>
         </div>
+        
         <div class="recommend-list">
           <h1 class="list-title">热门歌单推荐</h1>
           <ul>
@@ -23,7 +25,6 @@
                 <p class="desc" v-html="item.dissname"></p>
               </div>
             </li>
-
           </ul>
         </div>
       </div>
