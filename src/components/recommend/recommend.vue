@@ -23,7 +23,7 @@
                 <p class="desc" v-html="item.dissname"></p>
               </div>
             </li>
-
+            
           </ul>
         </div>
       </div>
@@ -51,6 +51,7 @@
     created() {
       this._getRecommend()
       this._getDiscList()
+      
     },
     methods: {
       _getRecommend() {
@@ -72,7 +73,6 @@
           this.$refs.scroll.refresh()
           this.checkLoaded = true
         }
-        
       }
 		},
 		components: {
